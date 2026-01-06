@@ -42,6 +42,7 @@ Før vi beder om penge, skal brugeren føle sig tryg og forstå produktet.
     - [x] "GDPR Compliant" & "Krypteret forbindelse" badges ved upload.
     - [x] Tydelig tekst om data-sletning ("Dine filer gemmes ikke").
     - [x] "Om os" / Kontakt information i footer for troværdighed (Email link).
+    - [x] Opret dedikerede sider: "Om os" og "Privatlivspolitik".
 - [x] **Gennemsigtighed & Pris**:
     - [x] Tydelig kommunikation om pris *før* upload (Gratis vs. Premium).
     - [x] Fjern "Bait-and-switch" frygt.
@@ -59,26 +60,40 @@ Nu er produktet troværdigt nok til at sælge.
     - [x] Opret "Premium Lock" komponent på rapportsiden.
     - [x] Slør/skjul sektionerne 4-10 for gratis brugere.
     - [x] Implementer "Køb Fuld Rapport" knap (Stripe Integration færdig).
+    - [x] **Domæne & Sikkerhed (Live)**:
+        - [x] Køb og opsæt `boligtjekker.dk`.
+        - [x] Implementer HTTPS via Caddy (Reverse Proxy).
+        - [x] Opdater alle redirects (Supabase/Stripe) til nyt domæne.
 
-## 🟢 Fase 7: Næste Skridt (I Morgen) 🚀
+## 🟢 Fase 7: Næste Skridt (Fokus Nu) 🚀
 Fokus på tilgængelighed og kvalitetssikring.
 
 - [ ] **Mobil & URL Input (Høj Prioritet)**:
-    - [x] Lav input-felt til URL på forsiden.
-    - [x] Implementer "Scraper" (eller Mockup) der henter salgsopstilling fra linket.
-    - [x] Gør det muligt at bruge Boligtjekker uden at have en PDF-fil klar.
+    - [ ] Lav input-felt til URL på forsiden (UI oprettet, mangler logik).
+    - [ ] Implementer "Scraper" der henter salgsopstilling fra linket.
+    - [ ] **Hent Billeder**: Scraperen skal også hente galleriet, så AI'en kan tjekke for visuelle skader (revner, fugt).
+    - [ ] Gør det muligt at bruge Boligtjekker uden at have en PDF-fil klar.
 
-- [x] **Sammenligning af Huse (Ny Feature)**:
+- [x] **Sammenligning af Huse (Færdig)**:
     - [x] Mulighed for at vælge 2 projekter på dashboardet.
     - [x] Generer en "Vs." rapport: Hvilket hus er i bedst stand?
     - [x] Sammenlign estimerede udbedringsomkostninger direkte.
     - [x] **Økonomi**: Inkluder priser, ejerudgift og m²-pris.
     - [x] **Gem**: Mulighed for at gemme og genfinde sammenligninger.
 
+## 🟡 Fase 8: Fremtiden (Post-Launch)
+- [ ] **Markedsføring & SEO**:
+    - [ ] Opret blog/indhold for at tiltrække trafik.
+    - [ ] Google Ads / Facebook Ads kampagner.
+- [ ] **Avanceret Analyse**:
+    - [ ] Billedanalyse af plantegninger.
+    - [ ] Tjek for lokalplaner og servitutter.
+
 - [ ] **System Test & Polering**:
     - [ ] **Stress Test**: Hvad sker der hvis 2 brugere uploader samtidig?
     - [ ] **Fejlhåndtering**: Pænere beskeder hvis PDF er korrupt eller betaling fejler.
     - [ ] **Mobil-test**: Tjek at "Lås op" knappen og rapporter ser godt ud på en telefon.
+    - [ ] **Smart Login**: Sørg for at den originale fane opdaterer automatisk, når man klikker på login-linket i en ny fane (Magic Link UX).
 
 ---
 
