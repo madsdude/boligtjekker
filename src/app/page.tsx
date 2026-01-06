@@ -228,8 +228,6 @@ export default function Home() {
           marginBottom: '1.5rem',
           lineHeight: 1.1,
           backgroundImage: 'none',
-          color: '#ffffff',
-          WebkitTextFillColor: '#ffffff'
         }}>
           Boligtjekker AI
         </h1>
@@ -256,7 +254,7 @@ export default function Home() {
               fontWeight: 600,
               cursor: 'pointer',
               border: activeTab === tab ? '1px solid var(--primary-gradient)' : '1px solid transparent',
-              background: activeTab === tab ? 'var(--primary-gradient)' : 'rgba(255,255,255,0.05)',
+              background: activeTab === tab ? 'var(--primary-gradient)' : 'var(--surface-glass)',
               color: activeTab === tab ? 'white' : 'var(--secondary)',
               transition: 'all 0.2s ease',
             }}
@@ -294,7 +292,7 @@ export default function Home() {
                       color: inputType === 'file' ? 'var(--foreground)' : 'var(--secondary)',
                       background: 'none',
                       border: 'none',
-                      borderBottom: inputType === 'file' ? '2px solid white' : '2px solid transparent',
+                      borderBottom: inputType === 'file' ? '2px solid var(--foreground)' : '2px solid transparent',
                       cursor: 'pointer',
                       fontWeight: 600
                     }}
@@ -308,7 +306,7 @@ export default function Home() {
                       color: inputType === 'url' ? 'var(--foreground)' : 'var(--secondary)',
                       background: 'none',
                       border: 'none',
-                      borderBottom: inputType === 'url' ? '2px solid white' : '2px solid transparent',
+                      borderBottom: inputType === 'url' ? '2px solid var(--foreground)' : '2px solid transparent',
                       cursor: 'pointer',
                       fontWeight: 600
                     }}
