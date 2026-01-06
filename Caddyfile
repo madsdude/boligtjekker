@@ -1,0 +1,3 @@
+boligtjekker.dk {
+    reverse_proxy web:3000
+}

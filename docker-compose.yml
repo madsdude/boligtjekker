@@ -24,3 +24,21 @@ services:
       NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL}
     env_file:
       - .env
+
+  caddy:
+    image: caddy:alpine
+    container_name: boligtjekker-caddy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - web
+
+volumes:
+  caddy_data:
+  caddy_config:
