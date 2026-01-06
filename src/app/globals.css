@@ -1,40 +1,24 @@
 :root {
-  /* Premium Dark/Modern Palette */
-  --background: #f8fafc;
-  /* Slate-50 */
-  --foreground: #0f172a;
-  /* Slate-900 */
+  /* Premium Dark/Modern Palette - ENFORCED GLOBALLY */
+  --background: #0b1121;
+  /* Deep dark blue/black */
+  --foreground: #f8fafc;
 
   /* Brand Gradients */
   --primary-gradient: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
   --primary-gradient-hover: linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%);
-  --surface-glass: rgba(255, 255, 255, 0.7);
-  --surface-glass-border: rgba(0, 0, 0, 0.1);
 
-  --secondary: #64748b;
-  --border: #e2e8f0;
+  --surface-glass: rgba(30, 41, 59, 0.7);
+  --surface-glass-border: rgba(255, 255, 255, 0.1);
+
+  --secondary: #94a3b8;
+  --border: #334155;
 
   --radius: 1rem;
   /* More rounded */
-  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
   --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
   --shadow-glow: 0 0 20px rgba(79, 70, 229, 0.15);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0b1121;
-    /* Deep dark blue/black */
-    --foreground: #f8fafc;
-
-    --surface-glass: rgba(30, 41, 59, 0.7);
-    --surface-glass-border: rgba(255, 255, 255, 0.1);
-
-    --secondary: #94a3b8;
-    --border: #334155;
-
-    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-  }
 }
 
 * {
