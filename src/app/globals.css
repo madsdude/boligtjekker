@@ -9,7 +9,7 @@
   --primary-gradient: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
   --primary-gradient-hover: linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%);
   --surface-glass: rgba(255, 255, 255, 0.7);
-  --surface-glass-border: rgba(255, 255, 255, 0.5);
+  --surface-glass-border: rgba(0, 0, 0, 0.1);
 
   --secondary: #64748b;
   --border: #e2e8f0;

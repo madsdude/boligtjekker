@@ -437,8 +437,8 @@ export default function Home() {
                         padding: '1rem 1.5rem',
                         borderRadius: '0.5rem',
                         border: '1px solid var(--border)',
-                        background: 'rgba(0,0,0,0.2)',
-                        color: 'white',
+                        background: 'var(--surface-glass)',
+                        color: 'var(--foreground)',
                         fontSize: '1rem',
                         marginBottom: '2rem',
                         outline: 'none'
