@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { Project, UploadedFile, AnalysisReport } from './types';
 import { Button } from './components/Button';
 import { UploadZone } from './components/UploadZone';
@@ -227,7 +228,7 @@ export default function Home() {
           letterSpacing: '-0.025em',
           marginBottom: '1.5rem',
           lineHeight: 1.1,
-          backgroundImage: 'none',
+
         }}>
           Boligtjekker AI
         </h1>
@@ -592,8 +593,8 @@ export default function Home() {
         borderTop: '1px solid var(--border)'
       }}>
         <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center', gap: '2rem' }}>
-          <a href="#" style={{ textDecoration: 'underline' }}>Om os</a>
-          <a href="#" style={{ textDecoration: 'underline' }}>Privatlivspolitik</a>
+          <Link href="/om-os" style={{ textDecoration: 'underline' }}>Om os</Link>
+          <Link href="/privatlivspolitik" style={{ textDecoration: 'underline' }}>Privatlivspolitik</Link>
           <a href="mailto:kontakt@boligtjekker.ai" style={{ textDecoration: 'underline' }}>Kontakt</a>
         </div>
         © {new Date().getFullYear()} Boligtjekker AI. Gør ejendomshandel gennemskueligt.
